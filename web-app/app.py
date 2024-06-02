@@ -21,10 +21,13 @@ def predict():
 
     output = prediction[0]
 
-    countries = ["Australia", "Canada", "Germany", "UK", "US"]
-
+    #countries = ["Australia", "Canada", "Germany", "UK", "US"]
+    shape = ['cylinder', 'light',  'circle',  'sphere',  'disk',  'fireball',  'unknown',  'oval', 
+ 'other',  'cigar',  'rectangle',  'chevron',  'triangle',  'formation', 'delta', 
+ 'changing',  'egg',  'diamond',  'flash',  'teardrop',  'cone',  'cross',  'pyramid', 
+ 'round',  'crescent',  'flare',  'hexagon',  'dome',  'changed']
     return render_template(
-        "index.html", prediction_text="Likely country: {}".format(countries[output])
+        "index.html", prediction_text="The most likely shape is: {}".format(shape[output])
     )
 
 

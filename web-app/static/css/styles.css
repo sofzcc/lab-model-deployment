@@ -14,7 +14,10 @@ input {
 }
 
 .grid {
-	width: 300px;
+	align-items: center; 
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 5px;
+	width: 100%;
 	border: 1px solid #2d2d2d;
 	display: grid;
 	justify-content: center;
@@ -23,6 +26,7 @@ input {
 
 .box {
 	color: #fff;
+	width: 600px;
 	background: #59cd9e;
 	padding: 12px;
 	display: inline-block;
